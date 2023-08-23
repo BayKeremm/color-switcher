@@ -8,11 +8,12 @@ using namespace cv;
 using namespace std;
 static void help(char** argv)
 {
-    cout << "\nThis program demonstrates the famous watershed segmentation algorithm in OpenCV: watershed()\n"
+    cout << "\nThis is a program that uses the watershed algorithm to find the wall in an image (Wall should be the largest segment)\n"
     "Usage:\n" << argv[0] <<" [image_name -- default is fruits.jpg]\n" << endl;
     cout << "Hot keys: \n"
     "\tESC - quit the program\n"
     "\tr - restore the original image\n"
+    "\tc - open color picker to put RGB values (press enter to select color)\n"
     "\tw or SPACE - run watershed segmentation algorithm\n"
     "\t\t(before running it, *roughly* mark the areas to segment on the image)\n"
     "\t (before that, roughly outline several markers on the image)\n";
